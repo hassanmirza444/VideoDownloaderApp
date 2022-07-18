@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white">
+
+    <!--header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/tint_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/banner_container">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/vibrateSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:text="Vibrate on download complete"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/soundSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:text="Play ound on download complete"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Browser"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/adBlockerSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:text="Ad Blocker"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:paddingVertical="16dp"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:text="History"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/banner_ad_lay"/>
+
+</RelativeLayout>

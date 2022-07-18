@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.Advance3DDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|left"
+        android:background="@color/background_color"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/navMenuDrawer"
+            layout="@layout/menu_drawer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/right"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:gravity="center|start"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="15sp"/>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</com.infideap.drawerbehavior.Advance3DDrawerLayout>

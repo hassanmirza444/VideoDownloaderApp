@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/background_color">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/downloadsCompletedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="88dp"/>
+
+    <LinearLayout
+        android:id="@+id/empty_download"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="download.json"
+            app:lottie_colorFilter="@color/tint_color"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Haven't Download Anything Yet!"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/downloadsCompletedFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/clearAllFinishedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/popup_bg"
+            android:backgroundTint="@color/tint_color"
+            android:layout_margin="10dp"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/goToFolder"/>
+
+        <Button
+            android:id="@+id/goToFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/popup_bg"
+            android:backgroundTint="@color/tint_color"
+            android:layout_margin="10dp"
+            android:text="Go to folder"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

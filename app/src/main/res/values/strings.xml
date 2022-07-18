@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Video Downloader</string>
+
+    <!--AdMob Id-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_ad_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_ad_id" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_open_ad_id" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+
+    <string name="company_name" translatable="false">upscapesoft</string>
+    <string name="skype_id" translatable="false">live:.cid.fad8cf9c0aa84d05</string>
+    <string name="right" translatable="false">\u00a9 2022 upscapesoft</string>
+    <string name="company_email" translatable="false">dev.upscapesoft@gmail.com</string>
+    <string name="version" translatable="false">0.0.0</string>
+    <string name="copyright_message">Made with \u2665 by upscapesoft</string>
+
+    <string name="about">About</string>
+    <string name="about_us">About Us</string>
+    <string name="company_title">Company</string>
+    <string name="email_title">E-mail</string>
+    <string name="version_title">Version</string>
+    <string name="contact">Contact</string>
+
+    <string name="share_via">Share via…</string>
+    <string-array name="blocked_sites">
+        <item>youtube.com</item>
+    </string-array>
+    <string name="share_message">Download the best video downloader app of all time!</string>
+    <string name="link">https://play.google.com/store</string>
+
+    <color name="light_grey">#c8c8c8</color>
+    <string name="premium_feature_message">Unlimited Access with No ads</string>
+    <string name="no_video_resource_message">Please go to <b>video detail page</b> to <b>play video first</b>, and the download button will be available after Video Downloader detects the video.</string>
+
+</resources>
